@@ -77,6 +77,12 @@ st.markdown(
         border: none;
         margin-top: 0.5rem;
     }}
+
+    /*사이드 바 접기 버튼 숨기기*/
+    button[title="Hide sidebar"] {{
+      display: none;
+    }}
+
     </style>
     """,
     unsafe_allow_html=True
