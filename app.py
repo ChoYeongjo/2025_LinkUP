@@ -3,7 +3,7 @@ import base64
 from pathlib import Path
 
 # ▶ 배경 이미지 파일 경로
-bg_image_path = "/content/drive/MyDrive/[책]251010_앱실습책/RAW/background_image.jpg"
+bg_image_path = "background_image.jpg"
 # ▶ 이미지 파일을 base64로 인코딩
 encoded = None
 p = Path(bg_image_path)
