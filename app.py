@@ -79,10 +79,9 @@ st.markdown(
     }}
 
     /*사이드 바 접기 버튼 숨기기*/
-    button[title="Hide sidebar"] {{
-      display: none;
-    }}
-
+    [data-testid="collapsedControl"]{
+        display: none !important;
+    }
     </style>
     """,
     unsafe_allow_html=True
