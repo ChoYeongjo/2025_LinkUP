@@ -3,7 +3,7 @@ import base64
 from pathlib import Path
 
 # ▶ 배경 이미지 파일 경로
-bg_image_path = "background_image_chatGPT.jpg"
+bg_image_path = "background_image_chatGPT.png"
 # ▶ 이미지 파일을 base64로 인코딩
 encoded = None
 p = Path(bg_image_path)
