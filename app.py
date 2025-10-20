@@ -78,10 +78,6 @@ st.markdown(
         margin-top: 0.5rem;
     }}
 
-    /*사이드 바 접기 버튼 숨기기*/
-    [data-testid="collapsedControl"]{
-        display: none !important;
-    }
     </style>
     """,
     unsafe_allow_html=True
