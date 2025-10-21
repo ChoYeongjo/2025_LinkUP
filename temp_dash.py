@@ -1,7 +1,14 @@
-# 섹션 1,2 둘다 안에 넣어서 한번에 출력 
-# 일단 배치까지는 완료 ok -> 아이콘 작업
 import streamlit as st
+import base64
 from pathlib import Path
+
+def load_icon_as_base64(path: str) -> str:
+    with open(path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode()
+
+ICON_PATH="images/temp_icon.png"
+ICON_BASE64=load_icon_as_base64(ICON_PATH)
+ICON_TAG =  f'<img src="data:image/png;base64,{ICON_BASE64}" alt="icon_error" />'
 
 st.set_page_config(page_title="Dashboard", page_icon="🏠", layout="wide")
 st.title("Dashboard")
@@ -74,21 +81,21 @@ st.markdown('<div class="section-title">Antigen–Antibody Reaction</div>', unsa
 cards_html = []
 cards_html.append("""
   <div class="card">
-    <img src="images/temp_icon.png" alt="icon_error">
+    {ICON_TAG}
     <p>Binding Affinity<br>(only sequence)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">1차년도 개발 완성</div>  
   </div>
 """)
 cards_html.append("""
   <div class="card disabled">
-    <img src="images/temp_icon.png" alt="icon2">
+    {ICON_TAG}
     <p>Binding Affinity<br>(+ 3D structure)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">2차년도 개발 예정</div>
   </div>  
 """)
 cards_html.append("""
   <div class="card disabled">
-    <img src="images/temp_icon.png" alt="icon3">
+    {ICON_TAG}
     <p>Binding Sites<br>(Paratope / Epitope)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">2차년도 개발 예정</div>    
   </div>
@@ -104,14 +111,14 @@ st.markdown('<div class="section-title">Therapeutic forecasting</div>', unsafe_a
 cards_html = []
 cards_html.append("""
   <div class="card">
-    <img src="images/temp_icon.png" alt="CRS prediction">
+    {ICON_TAG}
     <p>CRS prediction<br>(24hour)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">1차년도 개발 완성</div>
   </div>
 """)
 cards_html.append("""
   <div class="card disabled">
-    <img src="images/temp_icon.png" alt="DOR prediction">
+    {ICON_TAG}
     <p>DOR prediction<br>(Duration of Response)</p>  
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">2차년도 개발 예정</div>
   </div>
