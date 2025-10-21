@@ -74,7 +74,7 @@ st.markdown('<div class="section-title">Antigen–Antibody Reaction</div>', unsa
 cards_html = []
 cards_html.append("""
   <div class="card">
-    <img src="images/temp_icon.png" alt="icon1">
+    <img src="images/temp_icon.png" alt="icon_error">
     <p>Binding Affinity<br>(only sequence)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">1차년도 개발 완성</div>  
   </div>
