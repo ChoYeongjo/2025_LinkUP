@@ -74,21 +74,21 @@ st.markdown('<div class="section-title">Antigen–Antibody Reaction</div>', unsa
 cards_html = []
 cards_html.append("""
   <div class="card">
-    <img src="/content/drive/MyDrive/[책]251010_앱실습책/RAW/icon/ICON_1.png" alt="icon1">
+    <img src="images/temp_icon.png" alt="icon1">
     <p>Binding Affinity<br>(only sequence)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">1차년도 개발 완성</div>  
   </div>
 """)
 cards_html.append("""
   <div class="card disabled">
-    <img src="/content/drive/MyDrive/[책]251010_앱실습책/RAW/icon/ICON_1.png" alt="icon2">
+    <img src="images/temp_icon.png" alt="icon2">
     <p>Binding Affinity<br>(+ 3D structure)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">2차년도 개발 예정</div>
   </div>  
 """)
 cards_html.append("""
   <div class="card disabled">
-    <img src="/content/drive/MyDrive/[책]251010_앱실습책/RAW/icon/ICON_1.png" alt="icon3">
+    <img src="images/temp_icon.png" alt="icon3">
     <p>Binding Sites<br>(Paratope / Epitope)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">2차년도 개발 예정</div>    
   </div>
@@ -104,14 +104,14 @@ st.markdown('<div class="section-title">Therapeutic forecasting</div>', unsafe_a
 cards_html = []
 cards_html.append("""
   <div class="card">
-    <img src="/content/drive/MyDrive/[책]251010_앱실습책/RAW/icon/ICON_1.png" alt="CRS prediction">
+    <img src="images/temp_icon.png" alt="CRS prediction">
     <p>CRS prediction<br>(24hour)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">1차년도 개발 완성</div>
   </div>
 """)
 cards_html.append("""
   <div class="card disabled">
-    <img src="/content/drive/MyDrive/[책]251010_앱실습책/RAW/icon/ICON_1.png" alt="DOR prediction">
+    <img src="images/temp_icon.png" alt="DOR prediction">
     <p>DOR prediction<br>(Duration of Response)</p>  
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">2차년도 개발 예정</div>
   </div>
