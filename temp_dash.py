@@ -54,11 +54,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 카드렌더함수
-def card(label_html: str, icon_url: str, key: str, target_page: str|None, disabled: bool=False):
+def card(label_html: str, icon_tag: str, key: str, target_page: str|None, disabled: bool=False):
     disabled_cls = " disabled" if disabled else ""
     st.markdown(
         f'<div class="card{disabled_cls}">'
-        f'<img src="{icon_url}" alt="icon"/>'
+        f'{icon_tag}'
         f'<p>{label_html}</p>',
         unsafe_allow_html=True
     )
