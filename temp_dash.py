@@ -2,16 +2,19 @@ import streamlit as st
 import base64
 from pathlib import Path
 
-def load_icon_as_base64(path: str) -> str:
-    with open(path, "rb") as image_file:
-        return base64.b64encode(image_file.read()).decode()
+# def load_icon_as_base64(path: str) -> str:
+#     with open(path, "rb") as image_file:
+#         return base64.b64encode(image_file.read()).decode()
 
 # 임시로 하나만
 ICON_PATH="images/temp_icon.png"
 encoded = None
 p = Path(ICON_PATH)
+
 if p.exists():
-    encoded=base64.b64encode(p.read_bytes)).decode()
+    encoded = base64.b64encode(p.read_bytes()).decode()
+
+    
 ICON_TAG =  f'<img src="data:image/png;base64,{encoded}" alt="icon_error" />'
 
 st.set_page_config(page_title="Dashboard", page_icon="🏠", layout="wide")
