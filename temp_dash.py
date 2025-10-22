@@ -86,7 +86,7 @@ st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown('<div class="section-title">Antigen–Antibody Reaction</div>', unsafe_allow_html=True)
 
 cards_html = []
-cards_html.append("""
+cards_html.append(f"""
   <div class="card">
     {ICON_TAG}
     <p>Binding Affinity<br>(only sequence)</p>
