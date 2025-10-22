@@ -19,6 +19,12 @@ st.markdown("""
 .section-title{font-size: 22px; font-weight: 700; margin: 1px 0 10px;}
 .section-divider{height: 0;border-top: 3px solid #5da350;margin: 26px 0 18px;opacity: .8;}
 
+    /* 헤더(세 점 메뉴) 제거 */
+    header[data-testid="stHeader"] {{
+        visibility: hidden;
+        height: 0;
+    }}
+
 /*왼쪽부터 붙고, 넘으면 아래로(flexiable) */
 .row{
     display: flex; flex-wrap: wrap; gap: 24px; justify-content: flex-start;
