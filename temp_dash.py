@@ -6,9 +6,13 @@ def load_icon_as_base64(path: str) -> str:
     with open(path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode()
 
+# 임시로 하나만
 ICON_PATH="images/temp_icon.png"
-ICON_BASE64=load_icon_as_base64(ICON_PATH)
-ICON_TAG =  f'<img src="data:image/png;base64,{ICON_BASE64}" alt="icon_error" />'
+encoded = None
+p = Path(ICON_PATH)
+if p.exists():
+    encoded=base64.b64encode(p.read_bytes)).decode()
+ICON_TAG =  f'<img src="data:image/png;base64,{encoded}" alt="icon_error" />'
 
 st.set_page_config(page_title="Dashboard", page_icon="🏠", layout="wide")
 st.title("Dashboard")
@@ -18,12 +22,6 @@ st.markdown("""
 <style>
 .section-title{font-size: 22px; font-weight: 700; margin: 1px 0 10px;}
 .section-divider{height: 0;border-top: 3px solid #5da350;margin: 26px 0 18px;opacity: .8;}
-
-    /* 헤더(세 점 메뉴) 제거 */
-    header[data-testid="stHeader"] {{
-        visibility: hidden;
-        height: 0;
-    }}
 
 /*왼쪽부터 붙고, 넘으면 아래로(flexiable) */
 .row{
