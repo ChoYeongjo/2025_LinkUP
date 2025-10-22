@@ -93,14 +93,14 @@ cards_html.append(f"""
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">1차년도 개발 완성</div>  
   </div>
 """)
-cards_html.append("""
+cards_html.append(f"""
   <div class="card disabled">
     {ICON_TAG}
     <p>Binding Affinity<br>(+ 3D structure)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">2차년도 개발 예정</div>
   </div>  
 """)
-cards_html.append("""
+cards_html.append(f"""
   <div class="card disabled">
     {ICON_TAG}
     <p>Binding Sites<br>(Paratope / Epitope)</p>
@@ -116,14 +116,14 @@ st.markdown('<div class="section-divider"></div>', unsafe_allow_html=True)
 st.markdown('<div class="section-title">Therapeutic forecasting</div>', unsafe_allow_html=True)
 
 cards_html = []
-cards_html.append("""
+cards_html.append(f"""
   <div class="card">
     {ICON_TAG}
     <p>CRS prediction<br>(24hour)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">1차년도 개발 완성</div>
   </div>
 """)
-cards_html.append("""
+cards_html.append(f"""
   <div class="card disabled">
     {ICON_TAG}
     <p>DOR prediction<br>(Duration of Response)</p>  
