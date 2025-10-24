@@ -119,7 +119,14 @@ cards_html = []
 cards_html.append(f"""
   <div class="card">
     {ICON_TAG}
-    <p>CRS prediction<br>(24hour)</p>
+    <p>CRS Risk Scan<br>(Design Phrase)</p>
+    <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">1차년도 개발 완성</div>
+  </div>
+""")
+cards_html.append(f"""
+  <div class="card">
+    {ICON_TAG}
+    <p>CRS Risk Scan<br>(Post-Infusion)</p>
     <div class="note" style="font-size: 16px; padding-left: 8px; margin-top:14px;">1차년도 개발 완성</div>
   </div>
 """)
